@@ -1,0 +1,32 @@
+{
+  "name": "Aerox-Leveling-Bot",
+  "version": "1.0.0",
+  "description": "AeroX Leveling System — Created by JoshNvrDie / Aerox Development",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "imports": {
+    "#structures": "./src/structures/index.js",
+    "#structures/*": "./src/structures/*.js",
+    "#db": "./src/database/Manager.js",
+    "#config": "./src/config/config.js",
+    "#utils": "./src/utils/index.js",
+    "#utils/*": "./src/utils/*.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.97",
+    "canvacord": "^5.2.3",
+    "canvafy": "^7.2.1",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "jszip": "^3.10.1",
+    "sqlite": "^5.1.1"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^12.9.0"
+  }
+}
